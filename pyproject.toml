@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lsm6ds3-micropython"
+version = "0.0.1"
+authors = [
+  { name="Ryan", email="ryan@pimoroni.com" },
+]
+description = " MicroPython device library for the LSM6DS3TR-C IMU"
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: MIT License"
+]
+
+[tool.hatch.build]
+include = [
+    "src/lsm6ds3",
+    "README.md",
+    "LICENSE"
+]
+
+[project.urls]
+GitHub = "https://www.github.com/pimoroni/lsm6ds3-micropython"
+Homepage = "https://www.pimoroni.com"

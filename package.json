@@ -1,0 +1,6 @@
+{
+    "urls": [
+      ["lsm6ds3.py", "github:org/pimoroni/lsm6ds3-micropython/src/lsm6ds3/lsm6ds3.py"]
+    ],
+    "version": "0.0.1"
+}
