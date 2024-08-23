@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "lsm6ds3-micropython"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
   { name="Ryan", email="ryan@pimoroni.com" },
 ]
@@ -16,10 +16,13 @@ classifiers = [
 
 [tool.hatch.build]
 include = [
-    "src/lsm6ds3",
+    "src/lsm6ds3.py",
     "README.md",
     "LICENSE"
 ]
+
+[tool.hatch.build.targets.wheel]
+sources = ["src"]
 
 [project.urls]
 GitHub = "https://www.github.com/pimoroni/lsm6ds3-micropython"
