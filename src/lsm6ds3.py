@@ -85,19 +85,19 @@ class LSM6DS3:
         gx = (data[1] << 8) | data[0]
         gx = twos_comp(gx)
 
-        gy = (data[2] << 8) | data[3]
+        gy = (data[3] << 8) | data[2]
         gy = twos_comp(gy)
 
-        gz = (data[4] << 8) | data[5]
+        gz = (data[5] << 8) | data[4]
         gz = twos_comp(gz)
 
-        ax = (data[6] << 8) | data[7]
+        ax = (data[7] << 8) | data[6]
         ax = twos_comp(ax)
 
-        ay = (data[8] << 8) | data[9]
+        ay = (data[9] << 8) | data[8]
         ay = twos_comp(ay)
 
-        az = (data[10] << 8) | data[11]
+        az = (data[11] << 8) | data[10]
         az = twos_comp(az)
 
         return ax, ay, az, gx, gy, gz
